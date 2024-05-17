@@ -1,4 +1,6 @@
 <?php
+include('./includes/nav.php');
+
 $heure = 14;
 if ($heure < 12) {
   echo "Bonjour !";

@@ -31,7 +31,9 @@ $animaux_multi = array(
   <title>Variables et types de données</title>
 </head>
 <body>
-  <h1>Variables et types de données</h1>
+  <?php include('./includes/nav.php') ?>
 
+  <h1>Variables et types de données</h1>
+  <p><?= $nom . " a " . $age . " ans et mesure " . $taille . "m." ?></p>
 </body>
 </html>
