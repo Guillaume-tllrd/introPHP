@@ -1,11 +1,8 @@
 services:
     php:
         image: php:8.3-apache
-        container_name: intro_php
+        container_name: introphp
         ports:
             - "8000:80" # on définit le port pour accéder à l'application (localhost:8001)
         volumes:
             - ./src:/var/www/html # on monte le dossier courant dans le dossier /var/www/html du container
-        build:
-            context: .
-            dockerfile: Dockerfile

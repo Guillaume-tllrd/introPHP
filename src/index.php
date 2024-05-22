@@ -6,10 +6,10 @@
   <title>Document</title>
 </head>
 <body>
-  <?php include('./includes/nav.php') ?>
-  <h1>Mon index.php</h1>
+  <?php include_once('./includes/nav.php') ?>
+  <h1>Mon index.php avec go live! AHHH merci je reste ici</h1>
   <?php
-  echo "PHP (acronyme récursif pour PHP Hypertext Preprocessor) est un langage de script côté serveur principalement utilisé pour le développement web.";
+  echo "<p>PHP (acronyme récursif pour PHP Hypertext Preprocessor) est un langage de script côté serveur principalement utilisé pour le développement web.</p>";
   echo "</br>";
   echo "<p>Le serveur interprète le code PHP et génère du HTML.</p>"
   ?>

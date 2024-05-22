@@ -2,19 +2,20 @@
 include('./includes/nav.php');
 
 // echo "Boucle for<br>";
-// for ($i = 0; $i < 5; $i++) {
+// for ($i = 1; $i < 76; ++$i) {
 //   echo "Nombre : $i<br>";
 // }
 
 // echo "Boucle while<br>";
-// $i = 0;
+// $i = 1;
 // while ($i < 5) {
 //   echo "Nombre : $i<br>";
 //   $i++;
 // }
 
 // echo "Boucle foreach (tableaux indexés)<br>";
-// $animaux = array("Chien", "Chat", "Poisson");
+// $animaux = array("Chien", "Chat", "Poisson", "Crevette");
+// echo $animaux[0];
 // foreach ($animaux as $animal) {
 //   echo "$animal<br>";
 // }
@@ -37,6 +38,7 @@ include('./includes/nav.php');
 // );
 // echo "<pre>";
 // var_dump($animaux_multi);
+// print_r($animaux_multi);
 // echo "</pre>";
 // foreach ($animaux_multi as $animal) {
 //   echo $animal["nom"] . " est un " . $animal["type"] . " qui a " . $animal["age"] . " ans.<br>";
