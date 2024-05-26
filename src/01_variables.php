@@ -7,6 +7,7 @@ $disponible = false; // booléen
 // liste d'animaux de compagnie (tableau indexé)
 $animaux = array("Chien", "Chat", "Poisson");
 
+
 // liste d'animaux sous forme de tableau associatif
 $animaux_assoc = array(
   "Chien" => "Médor",
@@ -20,6 +21,55 @@ $animaux_multi = array(
   array("nom" => "Garfield", "type" => "Chat", "age" => 3),
   array("nom" => "Nemo", "type" => "Poisson", "age" => 1)
 );
+// ------------------- NOUVELLE TECHNO ---------
+// Connaitre le contenu et le type d'une variable:
+var_dump($animaux_multi);
+//Extraire une partie de la chaîne: / comme JS
+echo substr($nom, 0, 2);
+// Remplacer une partie de la chaine:
+$nom = str_replace("Jo", "pr",$nom);
+// str_contains(); str_start_with($nom, "pr"); str_ends_with($nom, "n") ;
+trim($nom); // enlever les espaces particuliers dans un string
+// incrémenter nombre:
+$age ++; //ou 
+$age +=1;
+// Décrémenter :
+$age --;
+$age -= 1;
+
+// AJOUTER des valeurs à un tableau : 
+array_push($animaux, "lapin", "pie");
+
+// Si on veut ajouter une seule valeur : 
+$animaux[]= "corbeau";
+
+// Si on veut ajouter une seule valeur AU DEBUT:
+array_unshift($animaux, "serpent");
+
+// Supprimer la derniere valeur:
+array_pop($animaux);
+
+// Diviser le tableau en plusierus parties de 2 valeurs: 
+$animaux2 = array_chunk($animaux, 2)
+
+// Comaraison variable avec opérateur combiné:
+$a = 54;
+$b = 4;
+$a <=> $b;
+// < -> -1 if a < b;
+// = -> 0 if a = b;
+// > -> 1 if a > b;
+switch($a <=> $b){
+  case -1:
+    echo "a plus petit que b";
+    break;
+  case 0:
+    echo"a égale à b";
+    break;
+  case 1:
+    echo "a est suppérieur à b";
+    break;
+}
 
 ?>
 
